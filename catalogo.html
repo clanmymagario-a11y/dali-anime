@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - DaliImport</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Figuras</h1>
+        <nav>
+            <button onclick="cerrarSesion()">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main id="listaFiguras">
+        <!-- Aquí se mostrarán las figuras -->
+    </main>
+
+    <footer>
+        <p>© 2025 DaliImport</p>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DaliImport</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Acceso a DaliImport</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registrarse</h2>
+            <input type="email" id="registroEmail" placeholder="Correo">
+            <input type="password" id="registroPassword" placeholder="Contraseña">
+            <button onclick="registrar()">Registrar</button>
+        </section>
+
+        <section>
+            <h2>Iniciar sesión</h2>
+            <input type="email" id="loginEmail" placeholder="Correo">
+            <input type="password" id="loginPassword" placeholder="Contraseña">
+            <button onclick="iniciarSesion()">Entrar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 DaliImport</p>
+    </footer>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="js/firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
