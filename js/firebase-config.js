@@ -1,20 +1,28 @@
-// Importa las funciones necesarias desde los SDK que uses
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+// js/firebase-config.js
+// Importa las funciones que vas a usar desde la versión 9 de Firebase.
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js";
 
-// Configuración de tu app de Firebase
+// !!! IMPORTANTE: Reemplaza estos valores con la configuración de tu proyecto de Firebase.
 const firebaseConfig = {
-  apiKey: "AIzaSyAwU-xxSN7fnmZdvsezbRTvIUFy1e8ZbM",
+  apiKey: "AIzaSyAwU-xxSN7fmnZdvsezbrBTVIUfY1e8ZbM",
   authDomain: "dali-anime.firebaseapp.com",
   projectId: "dali-anime",
-  storageBucket: "dali-anime.appspot.com",
+  storageBucket: "dali-anime.firebasestorage.app",
   messagingSenderId: "715941737867",
   appId: "1:715941737867:web:593571dbeaf29582ffeb8e",
-  measurementId: "G-E27WB6WHWV"
 };
 
-// Inicializa Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
-export { app, analytics };
+  
+  
+  
+ 
+
+// Inicializa Firebase con tu configuración
+const app = initializeApp(firebaseConfig);
+
+// Exporta los servicios de Firebase que usarás en otros archivos.
+export const auth = getAuth(app);
+export const db = getFirestore(app);
